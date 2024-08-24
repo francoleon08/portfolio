@@ -3,6 +3,25 @@ body {
     box-sizing: border-box;
 }
 
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #7C00FE;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #6c757d;
+}
+
+p, label, input {
+    font-weight: 500;
+    color: #6c757d;
+    font-size: 1.3rem;
+}
+
+
 /* Navbar background and text color */
 .navbar {
     /*background-color: rgb(17 24 39);    */        
@@ -19,12 +38,13 @@ body {
 .navbar-toggler {
     background-color: transparent; /* Color de fondo del botón */
     border: none; /* Sin borde */
-    transition: color 0.2s; /* Transición suave */
+    border-radius: 100px;
+    transition: 0.2s; /* Transición suave */
 }
 
 .navbar-toggler svg {
     color: #7C00FE; /* Color del ícono */    
-    transition: color 0.2s; /* Transición suave */
+    transition: 0.2s; /* Transición suave */
 }
 
 .navbar-toggler svg:hover {
@@ -33,6 +53,12 @@ body {
 
 .navbar-toggler:hover {
     background-color: #7C00FE; /* Color del ícono */; /* Color de fondo al pasar el ratón */    
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center; /* Centra los ítems del menú en dispositivos móviles */
+    }
 }
 
 
@@ -73,15 +99,22 @@ body {
     height: 300px;
 }
 
-.skills-section {
-    padding: 25px 0;
+#conoceme {
     background-color: #f8f9fa;
 }
 
-h2 {
-    font-size: 3rem;
-    font-weight: 700;
+.link-uns {
+    text-decoration: none;
     color: #7C00FE;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+.skills-section {
+    padding: 25px 0;
 }
 
 .skill-card {
@@ -90,7 +123,7 @@ h2 {
     padding: 20px;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 230px;
+    height: 300px;
 }
 
 .skill-card h5 {
@@ -110,6 +143,10 @@ h2 {
 }
 
 /* Projects Section */
+#projects {
+    background-color: #f8f9fa;
+}
+
 .project-card {
     background-color: #fff;
     border-radius: 10px;
@@ -144,10 +181,6 @@ h2 {
 
 
 /* Contact Section */
-.contact-section {
-    background-color: #f8f9fa;
-}
-
 .contact-section h2 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -166,11 +199,38 @@ h2 {
     background-color: hsl(240, 5.9%, 15%);
 }
 
-/* Footer Styles */
-.footer {
-    background-color: #7C00FE;
+.social-icon {
+    font-size: 2rem;
+    color: #343a40;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.footer .text-light {
-    color: #F2F2F2;
+.social-icon:hover {
+    color: #7C00FE;
+}
+
+.social-icon i {
+    margin: 0.5rem;
+    font-size: 40px;
+}
+
+#contact input,
+#contact textarea {
+    background-color: #f8f9fa;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 1rem 0;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin: 0;
 }
