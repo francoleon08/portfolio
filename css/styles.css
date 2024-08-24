@@ -1,0 +1,176 @@
+body {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar background and text color */
+.navbar {
+    /*background-color: rgb(17 24 39);    */        
+    padding: 40px 40px 40px 40px;
+}
+
+.nav-item *,
+.navbar-brand {
+    color: #7C00FE;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.navbar-toggler {
+    background-color: transparent; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    transition: color 0.2s; /* Transición suave */
+}
+
+.navbar-toggler svg {
+    color: #7C00FE; /* Color del ícono */    
+    transition: color 0.2s; /* Transición suave */
+}
+
+.navbar-toggler svg:hover {
+    color: white; /* Color del ícono */
+}
+
+.navbar-toggler:hover {
+    background-color: #7C00FE; /* Color del ícono */; /* Color de fondo al pasar el ratón */    
+}
+
+
+.contact-button {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid #7C00FE; /* Color del borde */
+    background-color: #7C00FE;
+    border-radius: 30px; /* Bordes suaves */    
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Color del texto al pasar el ratón */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.contact-button:hover {
+    background-color: white; /* Color de fondo al pasar el ratón */
+    color: #7C00FE; /* Color del texto al pasar el ratón */
+}
+
+
+/* About Me Section */
+.about-me {    
+    text-align: center;
+    min-height: 100vh;        
+}
+
+.text-abaut-me {
+    font-size: 1.4rem;
+    font-weight: 600;    
+    color: #6c757d;
+}
+
+
+.about-me img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: 300px;
+}
+
+.skills-section {
+    padding: 25px 0;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #7C00FE;
+}
+
+.skill-card {
+    background-color: hsl(240 4.8% 95.9%);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 230px;
+}
+
+.skill-card h5 {
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.skill-card p {
+    margin-top: 10px;
+    font-weight: 400;
+    color: #6c757d;
+}
+
+.skill-icon {
+    font-size: 30px;
+    color: #333;
+}
+
+/* Projects Section */
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.project-card h5 {
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.project-card p {
+    color: #6c757d;
+}
+
+.project-card .btn-primary {
+    background-color: hsl(240, 5.9%, 10%);
+    border: none;
+}
+
+.project-card .btn-primary:hover {
+    background-color: hsl(240, 5.9%, 15%);
+}
+
+
+/* Contact Section */
+.contact-section {
+    background-color: #f8f9fa;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.contact-section .form-label {
+    font-weight: 500;
+}
+
+.contact-section .btn-primary {
+    background-color: hsl(240, 5.9%, 10%);
+    border: none;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: hsl(240, 5.9%, 15%);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #7C00FE;
+}
+
+.footer .text-light {
+    color: #F2F2F2;
+}
