@@ -15,6 +15,10 @@ h3 {
     color: #6c757d;
 }
 
+p {
+    margin: 0;
+}
+
 p, label, input {
     font-weight: 500;
     color: #6c757d;
@@ -29,7 +33,6 @@ textarea {
 
 /* Navbar background and text color */
 .navbar {
-    /*background-color: rgb(17 24 39);    */        
     padding: 35px;
 }
 
@@ -41,28 +44,28 @@ textarea {
 }
 
 .navbar-toggler {
-    background-color: transparent; /* Color de fondo del botón */
-    border: none; /* Sin borde */
+    background-color: transparent;
+    border: none;
     border-radius: 100px;
-    transition: 0.2s; /* Transición suave */
+    transition: 0.2s;
 }
 
 .navbar-toggler svg {
-    color: #7C00FE; /* Color del ícono */    
-    transition: 0.2s; /* Transición suave */
+    color: #7C00FE; 
+    transition: 0.2s;
 }
 
 .navbar-toggler svg:hover {
-    color: white; /* Color del ícono */
+    color: white; 
 }
 
 .navbar-toggler:hover {
-    background-color: #7C00FE; /* Color del ícono */; /* Color de fondo al pasar el ratón */    
+    background-color: #7C00FE;
 }
 
 @media (max-width: 991px) {
     .navbar-nav {
-        text-align: center; /* Centra los ítems del menú en dispositivos móviles */
+        text-align: center;
     }
 }
 
@@ -71,18 +74,18 @@ textarea {
     font-size: larger;
     display: inline-block;
     padding: 8px 16px;
-    border: 2px solid #7C00FE; /* Color del borde */
+    border: 2px solid #7C00FE;
     background-color: #7C00FE;
-    border-radius: 30px; /* Bordes suaves */    
-    text-decoration: none; /* Sin subrayado */
-    color: white; /* Color del texto al pasar el ratón */
+    border-radius: 30px; 
+    text-decoration: none; 
+    color: white;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .contact-button:hover {
-    background-color: white; /* Color de fondo al pasar el ratón */
-    color: #7C00FE; /* Color del texto al pasar el ratón */
+    background-color: white;
+    color: #7C00FE; 
 }
 
 
@@ -91,7 +94,7 @@ textarea {
     text-align: center;
     min-height: 100vh;        
 }
-
+ /* Color del borde */
 .text-abaut-me {
     font-size: 1.4rem;
     font-weight: 600;    
@@ -165,46 +168,48 @@ textarea {
 
 /* Projects Section */
 #projects {
-    background-color: #eaeef1;
     padding: 0 .5rem;
+    background-color: #eaeef1;
 }
-
-.project-card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project-card img {
-    border-radius: 10px;
-    max-height: 200px;
-    object-fit: cover;
-}
-
-.project-card h5 {
-    margin-top: 15px;
-    font-weight: 700;
-}
-
-.project-card p {
-    color: #6c757d;
-}
-
-.project-card .btn-primary {
-    background-color: hsl(240, 5.9%, 10%);
-    border: none;
-}
-
-.project-card .btn-primary:hover {
-    background-color: hsl(240, 5.9%, 15%);
-}
-
 
 /* Contact Section */
 #contact {
     padding: 0 .5rem;
+}
+
+.title-project {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.description-project {
+    font-weight: 400;
+    color: #6c757d;
+}
+
+.img-project {
+    border-radius: 10px;
+}
+
+.tec-project {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #F5004F;
+}
+
+.project-icon {
+    font-size: 2.5rem;
+    color: #343a40;
+    text-decoration: none;
+}
+
+.project-icon i {
+    transition: color 0.3s ease;
+}
+
+.project-icon i:hover {
+    color: #7C00FE;
 }
 
 .contact-section .form-label {
@@ -257,8 +262,8 @@ textarea {
 }
 
 .btn-scroll-top {
-    right: 40px; /* Ajusta la distancia desde el borde derecho */
-    bottom: 9px; /* Ajusta la distancia desde el borde inferior */
+    right: 40px;
+    bottom: 9px;
     color: #eaeef1;
-    font-size: 30px; /* Tamaño del icono, ajusta según tus necesidades */
+    font-size: 30px;
 }
