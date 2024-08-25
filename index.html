@@ -8,7 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -53,7 +55,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Proyectos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ps-lg-4">
                         <a class="nav-link contact-button" href="#contact">Contacto</a>
                     </li>
                 </ul>
@@ -84,70 +86,162 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4">
-                    <h2 class="mb-4 text-left">Conóceme</h2>
+                    <h2 class="mb-4">Conóceme</h2>
                 </div>
                 <div class="col-lg-8 px-3 px-lg-0">
                     <p class="text-justify">
-                        Soy un desarrollador Backend con experiencia en Java y Spring Boot. Competente en diseño y desarrollo de servicios RESTful, integración de bases de datos y pruebas automatizadas. Busco aplicar mis habilidades en un entorno colaborativo donde pueda contribuir al crecimiento del equipo y continuar desarrollando mis capacidades técnicas.
+                        Soy desarrollador Backend especializado en <strong>Java</strong> y <strong>Spring Boot</strong>. Tengo experiencia en el diseño y desarrollo de servicios <strong>RESTful</strong>, integración de bases de datos y pruebas automatizadas. Me apasiona trabajar en equipos colaborativos y contribuir al crecimiento del equipo mientras continúo desarrollando mis habilidades técnicas.
                     </p>
                     <p class="text-justify">
-                        Actualmente, estoy cursando la Licenciatura en Ciencias de la Computación en la <a class="link-uns" href="https://www.uns.edu.ar/" target="_blank">Universidad Nacional del Sur</a> (Bahía Blanca, Buenos Aires).
+                        Actualmente, estudio la <strong>Licenciatura en Ciencias de la Computación</strong> en la <a class="link-uns" href="https://www.uns.edu.ar/" target="_blank">Universidad Nacional del Sur</a> en Bahía Blanca, Buenos Aires.
                     </p>
-                    <div class="d-flex justify-content-lg-end justify-content-center">
-                        <a class="nav-link contact-button" href="#contact">Contáctame</a>
+                    <div class="d-flex justify-content-lg-end justify-content-center pt-3">
+                        <a class="contact-button" href="#contact">Contáctame</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>    
+    </section>       
 
     <!-- Skills Section -->
-    <section id="skills" class="skills-section">
+    <section id="skills" class="skills-section py-5">
         <div class="container">
             <h2 class="text-center mb-5">Skills</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="skill-card">
-                        <div class="skill-icon">🌐</div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div class="skill-icon">
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="skill-card-main">
+                                Main
+                            </div>
+                        </div>
                         <h5>Java</h5>
-                        <p>Experto en el lenguaje de programación Java, incluyendo sus características principales, marcos y mejores prácticas.</p>
+                        <p>Desarrollo con Java 11+, principios SOLID, Maven y Gradle.</p>
                     </div>
                 </div>
+                
                 <div class="col-md-4 mb-4">
                     <div class="skill-card">
-                        <div class="skill-icon">⚙️</div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <div class="skill-card-main">
+                                Main
+                            </div>
+                        </div>                    
                         <h5>Spring Boot</h5>
-                        <p>Experiencia en la construcción de aplicaciones web escalables y robustas utilizando el marco Spring Boot.</p>
+                        <p>Desarrollo de APIs con Spring Boot, Spring Data, Spring Security, y Spring MVC.</p>
                     </div>
                 </div>
+
                 <div class="col-md-4 mb-4">
                     <div class="skill-card">
-                        <div class="skill-icon">💾</div>
-                        <h5>MySQL</h5>
-                        <p>Habilidad en el diseño y gestión de bases de datos MySQL, incluyendo la escritura de consultas complejas y la optimización del rendimiento.</p>
-                    </div>
-                </div>    
-                <div class="col-md-4 mb-4">
-                    <div class="skill-card">
-                        <div class="skill-icon">🌐</div>
-                        <h5>Java</h5>
-                        <p>Experto en el lenguaje de programación Java, incluyendo sus características principales, marcos y mejores prácticas.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="skill-card">
-                        <div class="skill-icon">⚙️</div>
-                        <h5>Spring Boot</h5>
-                        <p>Experiencia en la construcción de aplicaciones web escalables y robustas utilizando el marco Spring Boot.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div class="skill-card-main">
+                                Main
+                            </div>
+                        </div>                          
+                        <h5>Bases de Datos</h5>
+                        <p>Gestión de MySQL, PostgreSQL y Redis. Diseño y optimización de bases de datos.</p>
                     </div>
                 </div>
+                
                 <div class="col-md-4 mb-4">
                     <div class="skill-card">
-                        <div class="skill-icon">💾</div>
-                        <h5>MySQL</h5>
-                        <p>Habilidad en el diseño y gestión de bases de datos MySQL, incluyendo la escritura de consultas complejas y la optimización del rendimiento.</p>
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h5>Python</h5>
+                        <p>Creación de microservicios con FastAPI y bases de datos con SQLAlchemy.</p>
                     </div>
-                </div>                
+                </div>
+                                
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-docker"></i>
+                        </div>
+                        <h5>Docker</h5>
+                        <p>Contenedorización y despliegue de aplicaciones con Docker y Docker-Compose.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-bug"></i>
+                        </div>
+                        <h5>Testing</h5>
+                        <p>Pruebas unitarias y de integración en Java utilizando JUnit para asegurar la calidad del código.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-git-alt"></i>
+                        </div>
+                        <h5>Git y Control de Versiones</h5>
+                        <p>Control de versiones con Git y GitHub. Trabajo colaborativo y manejo de ramas.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-chrome"></i>
+                        </div>
+                        <h5>Desarrollo Web</h5>
+                        <p>Desarrollo web con HTML, CSS, SASS, JavaScript y Bootstrap.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h5>Pruebas y Depuración de APIs</h5>
+                        <p>Pruebas y depuración de APIs utilizando Insomnia y Postman.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">                    
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h5>Patrones Arquitectónicos y de Diseño</h5>
+                        <p>Aplicación de MVC, DTO, DAO, y principios de clean code.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h5>Herramientas de Desarrollo</h5>
+                        <p>Manejo de Maven, Gradle, SSH, FileZilla, Render y Railway.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-business-time"></i>
+                        </div>
+                        <h5>Scrum y Metodologías Ágiles</h5>
+                        <p>Trabajo en equipo utilizando metodologías ágiles, especialmente Scrum.</p>
+                    </div>
+                </div>                                                           
             </div>
         </div>
     </section>
@@ -155,7 +249,7 @@
     <!-- Projects Section -->
     <section id="projects" class="projects-section py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Projects</h2>
+            <h2 class="text-center mb-5">Proyectos</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="project-card">
@@ -205,7 +299,7 @@
                             <textarea class="form-control" id="message" rows="4" placeholder="Escriba su mensaje aquí" required></textarea>
                         </div>
                         <div class="d-flex justify-content-lg-end justify-content-center">
-                            <button type="submit" class="btn contact-button">Enviar</button>
+                            <button type="submit" class="contact-button">Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -228,9 +322,13 @@
     </section>
     
 
-    <footer class="footer text-center">
-        <p>&copy; 2024 Franco Leon. Todos los derechos reservados.</p>
+    <footer class="footer text-center position-relative">
+        <p>&copy; 2024 Franco Leon</p>
+        <a href="#" class="btn-scroll-top position-absolute">
+            <i class="fas fa-chevron-up"></i>
+        </a>
     </footer>
+    
     
 
     <!-- Optional JavaScript -->

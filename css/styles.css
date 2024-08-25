@@ -1,5 +1,5 @@
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Nunito", sans-serif;
     box-sizing: border-box;
 }
 
@@ -21,11 +21,16 @@ p, label, input {
     font-size: 1.3rem;
 }
 
+textarea {
+    resize: none;
+}
+
+
 
 /* Navbar background and text color */
 .navbar {
     /*background-color: rgb(17 24 39);    */        
-    padding: 40px 40px 40px 40px;
+    padding: 35px;
 }
 
 .nav-item *,
@@ -63,6 +68,7 @@ p, label, input {
 
 
 .contact-button {
+    font-size: larger;
     display: inline-block;
     padding: 8px 16px;
     border: 2px solid #7C00FE; /* Color del borde */
@@ -100,7 +106,8 @@ p, label, input {
 }
 
 #conoceme {
-    background-color: #f8f9fa;
+    background-color: #eaeef1;
+    padding: 0 .5rem;
 }
 
 .link-uns {
@@ -115,15 +122,29 @@ p, label, input {
 
 .skills-section {
     padding: 25px 0;
+    padding: 0 .5rem;
 }
 
 .skill-card {
-    background-color: hsl(240 4.8% 95.9%);
+    background-color: #eaeef1;
     border-radius: 10px;
     padding: 20px;
     text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    height: 240px;
+}
+
+.skill-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.skill-card-main {
+    background-color: #F5004F;
+    color: white;
+    padding: 2px 8px; 
+    border-radius: 5px; 
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .skill-card h5 {
@@ -138,13 +159,14 @@ p, label, input {
 }
 
 .skill-icon {
-    font-size: 30px;
+    font-size: 38px;
     color: #333;
 }
 
 /* Projects Section */
 #projects {
-    background-color: #f8f9fa;
+    background-color: #eaeef1;
+    padding: 0 .5rem;
 }
 
 .project-card {
@@ -181,9 +203,8 @@ p, label, input {
 
 
 /* Contact Section */
-.contact-section h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
+#contact {
+    padding: 0 .5rem;
 }
 
 .contact-section .form-label {
@@ -217,14 +238,14 @@ p, label, input {
 
 #contact input,
 #contact textarea {
-    background-color: #f8f9fa;
+    background-color: #eaeef1;
 }
 
 
 /* Footer Styles */
 .footer {
     background-color: #343a40;
-    color: #f8f9fa;
+    color: #eaeef1;
     padding: 1rem 0;
     display: flex;
     align-self: center;
@@ -233,4 +254,11 @@ p, label, input {
 
 .footer p {
     margin: 0;
+}
+
+.btn-scroll-top {
+    right: 40px; /* Ajusta la distancia desde el borde derecho */
+    bottom: 9px; /* Ajusta la distancia desde el borde inferior */
+    color: #eaeef1;
+    font-size: 30px; /* Tamaño del icono, ajusta según tus necesidades */
 }
