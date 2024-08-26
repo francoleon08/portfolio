@@ -19,7 +19,9 @@ p {
     margin: 0;
 }
 
-p, label, input {
+p,
+label,
+input {
     font-weight: 500;
     color: #6c757d;
     font-size: 1.3rem;
@@ -51,12 +53,12 @@ textarea {
 }
 
 .navbar-toggler svg {
-    color: #7C00FE; 
+    color: #7C00FE;
     transition: 0.2s;
 }
 
 .navbar-toggler svg:hover {
-    color: white; 
+    color: white;
 }
 
 .navbar-toggler:hover {
@@ -76,28 +78,29 @@ textarea {
     padding: 8px 16px;
     border: 2px solid #7C00FE;
     background-color: #7C00FE;
-    border-radius: 30px; 
-    text-decoration: none; 
+    border-radius: 30px;
+    text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s; 
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .contact-button:hover {
     background-color: white;
-    color: #7C00FE; 
+    color: #7C00FE;
 }
 
 
 /* About Me Section */
-.about-me {    
+.about-me {
     text-align: center;
-    min-height: 100vh;        
+    min-height: 100vh;
 }
- /* Color del borde */
+
+/* Color del borde */
 .text-abaut-me {
     font-size: 1.4rem;
-    font-weight: 600;    
+    font-weight: 600;
     color: #6c757d;
 }
 
@@ -144,8 +147,8 @@ textarea {
 .skill-card-main {
     background-color: #F5004F;
     color: white;
-    padding: 2px 8px; 
-    border-radius: 5px; 
+    padding: 2px 8px;
+    border-radius: 5px;
     font-size: 20px;
     font-weight: 600;
 }
