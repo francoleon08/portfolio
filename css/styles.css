@@ -179,6 +179,11 @@ textarea {
     background-color: #eaeef1;
 }
 
+.img-project {
+    width: 500px;
+    height: 270px;
+}
+
 /* Contact Section */
 #contact {
     padding: 0 .5rem;
