@@ -184,6 +184,40 @@ textarea {
     height: 270px;
 }
 
+@media (max-width: 550px) {
+    .img-project {
+        width: 450px;
+        height: auto;
+    }
+
+    .img-project-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .img-project {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .img-project {
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .img-project {
+        width: 300px;
+        height: auto;
+    }
+}
+
+
 /* Contact Section */
 #contact {
     padding: 0 .5rem;
