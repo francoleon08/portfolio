@@ -138,7 +138,7 @@
                             </div>
                         </div>
                         <h5>Spring Boot</h5>
-                        <p>Desarrollo de APIs con Spring Boot, Spring Data, Spring Security, y Spring MVC.</p>
+                        <p>Desarrollo de APIs con Spring Boot, Spring Data, Spring Security y Spring MVC.</p>
                     </div>
                 </div>
 
@@ -153,7 +153,7 @@
                             </div>
                         </div>
                         <h5>Bases de Datos</h5>
-                        <p>Gestión de MySQL, PostgreSQL y Redis. Diseño y optimización de bases de datos.</p>
+                        <p>Gestión de MySQL, PostgreSQL, Mongo y Redis. Diseño y optimización de bases de datos.</p>
                     </div>
                 </div>
 
@@ -169,22 +169,36 @@
 
                 <div class="col-md-4 mb-4" data-aos="fade-up">
                     <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fa-brands fa-docker"></i>
-                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div class="skill-icon">
+                                <i class="fa-brands fa-docker"></i>
+                            </div>
+                            <div class="skill-card-main">
+                                Main
+                            </div>
+                        </div>                        
                         <h5>Docker</h5>
-                        <p>Contenedorización y despliegue de aplicaciones con Docker y Docker-Compose.</p>
+                        <p>
+                            Microservicios con Docker y Docker Compose. Despliegue de aplicaciones en contenedores.
+                        </p>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4" data-aos="fade-up">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fa-solid fa-bug"></i>
-                        </div>
+                    <div class="skill-card">                        
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-bug"></i>
+                            </div>
+                            <div class="skill-card-main">
+                                Main
+                            </div>
+                        </div>    
                         <h5>Testing</h5>
-                        <p>Pruebas unitarias y de integración en Java utilizando JUnit para asegurar la calidad del
-                            código.</p>
+                        <p>
+                            Funcional, unitario y de integración con JUnit, Mockito, Selenium, Postman
+                            y Playwright.
+                        </p>
                     </div>
                 </div>
 
@@ -193,8 +207,10 @@
                         <div class="skill-icon">
                             <i class="fa-brands fa-git-alt"></i>
                         </div>
-                        <h5>Git y Control de Versiones</h5>
-                        <p>Control de versiones con Git y GitHub. Trabajo colaborativo y manejo de ramas.</p>
+                        <h5>Control de Versiones</h5>
+                        <p>
+                            Git y GitHub. Trabajo colaborativo y manejo de ramas. Flujo de trabajo con GitFlow.
+                        </p>
                     </div>
                 </div>
 
@@ -233,7 +249,7 @@
                         <div class="skill-icon">
                             <i class="fa-solid fa-screwdriver-wrench"></i>
                         </div>
-                        <h5>Herramientas de Desarrollo</h5>
+                        <h5>Desarrollo y Despliegue</h5>
                         <p>Manejo de Maven, Gradle, SSH, FileZilla, Render y Railway.</p>
                     </div>
                 </div>
@@ -258,7 +274,10 @@
 
             <div class="row d-flex justify-content-between align-items-center mb-5" data-aos="fade-right">
                 <div class="col-md-6 img-project-container">
-                    <img class="img-project" src="assets/movie.jpg" alt="Placeholder" class="img-fluid img-project">
+                    <div class="img-wrapper">
+                        <img class="img-project" src="assets/movie.jpg" alt="Placeholder" class="img-fluid img-project">
+                        <span class="badge">En desarrollo</span>
+                    </div>
                 </div>
                 <div class="col-md-6 py-3">
                     <h3 class="title-project">Movie reservation system</h3>
@@ -355,6 +374,25 @@
                             </a>
                        </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-between align-items-center mb-5" data-aos="fade-left">
+                <div class="col-md-6 order-2 order-md-1 py-3">
+                    <h3 class="title-project">Testing con Playwright</h3>
+                    <p class="description-project text-justify">
+                        Pruebas automatizadas para verificar el funcionamiento del formulario de inicio de sesión de 
+                        <a href="https://cs.uns.edu.ar/~mll/temp/testing/examen/login.html" target="_blank">OSTH</a>.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="tec-project">TypeScript - Playwright - NodeJs</p>
+                        <a href="https://github.com/francoleon08/tarea-8-Playwright" target="_blank" class="project-icon">                            
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2 img-project-container">
+                    <img class="img-project" src="assets/testing.jpg" alt="Placeholder" class="img-fluid img-project">
                 </div>
             </div>
         </div>
