@@ -1,0 +1,135 @@
+<section id="contact" class="contact-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form action="https://formspree.io/f/xldraqpp"
+                method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Su email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" name="message" id="message" rows="4" placeholder="Escriba su mensaje aquí"
+                            required></textarea>
+                    </div>
+                    <div class="d-flex justify-content-lg-end justify-content-center">
+                        <button type="submit" class="contact-button">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="text-center mt-4" data-aos="fade-up">
+            <h3>¡Hablemos!</h3>
+            <div class="d-flex justify-content-center mt-3">
+                <a href="https://github.com/francoleon08" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/francoleondev/" target="_blank" class="social-icon mx-3">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:francoleondev@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    #contact {
+        padding: 0 .5rem;
+    }
+
+    .title-project {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .description-project {
+        font-weight: 400;
+        color: #6c757d;
+    }
+
+    .img-project {
+        border-radius: 10px;
+    }
+
+    .tec-project {
+        font-size: 1.2rem;
+        font-weight: 800;
+        color: #F5004F;
+    }
+
+    .project-icon {
+        font-size: 2.5rem;
+        color: #343a40;
+        text-decoration: none;
+    }
+
+    .project-icon i {
+        transition: color 0.3s ease;
+    }
+
+    .project-icon i:hover {
+        color: #7C00FE;
+    }
+
+    .contact-section .form-label {
+        font-weight: 500;
+    }
+
+    .contact-section .btn-primary {
+        background-color: hsl(240, 5.9%, 10%);
+        border: none;
+    }
+
+    .contact-section .btn-primary:hover {
+        background-color: hsl(240, 5.9%, 15%);
+    }
+
+    .social-icon {
+        font-size: 2rem;
+        color: #343a40;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .social-icon:hover {
+        color: #7C00FE;
+    }
+
+    .social-icon i {
+        margin: 0.5rem;
+        font-size: 40px;
+    }
+
+    #contact input,
+    #contact textarea {
+        background-color: #eaeef1;
+    }
+
+    .contact-button {
+        color: white !important;
+        font-size: larger;
+        display: inline-block;
+        padding: 8px 16px;
+        border: 2px solid #7C00FE;        
+        border-radius: 30px;
+        text-decoration: none;
+        background-color: #7C00FE;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .contact-button:hover {
+        background-color: white;
+        color: #7C00FE !important;
+    }
+</style>

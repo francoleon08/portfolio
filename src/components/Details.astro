@@ -1,0 +1,47 @@
+---
+import ContactButton from "./ContactButton.astro"
+---
+
+<section id="conoceme" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <h2 class="mb-4">Conóceme</h2>
+            </div>
+            <div class="col-lg-8 px-3 px-lg-0">
+                <p class="text-justify">
+                    Soy desarrollador Backend especializado en <strong>Java</strong> y <strong>Spring Boot</strong>.
+                    Tengo experiencia en el diseño y desarrollo de servicios <strong>RESTful</strong>, integración
+                    de bases de datos y pruebas automatizadas. Me apasiona trabajar en equipos colaborativos y
+                    contribuir al crecimiento del equipo mientras continúo desarrollando mis habilidades técnicas.
+                </p>
+                <p class="text-justify">
+                    Actualmente, estudio la <strong>Licenciatura en Ciencias de la Computación</strong> en la <a
+                        class="link-uns" href="https://www.uns.edu.ar/" target="_blank">Universidad Nacional del
+                        Sur</a> en Bahía Blanca, Buenos Aires.
+                </p>
+                <div class="d-flex justify-content-lg-end justify-content-center pt-3">
+                    <ContactButton 
+                        text="Contacto"
+                    />
+                </div>                
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    #conoceme {
+        background-color: #eaeef1;
+        padding: 0 .5rem;
+    }
+
+    .link-uns {
+        text-decoration: none;
+        color: #7C00FE;
+    }
+
+    .text-justify {
+        text-align: justify;
+    }    
+</style>
