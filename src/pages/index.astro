@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AboutMe from '../components/AboutMe.astro';
+import Details from '../components/Details.astro';
+import Skills from '../components/SkillCards.astro';
+import Projects from '../components/project-section/ProjectSection.astro'
+import ContactSection from '../components/ContactSection.astro';
+---
+
+<Layout title="Franco Leon">
+	<AboutMe
+        title="Desarrollador Backend"
+        description="Desarrollo soluciones robustas y eficientes, me apasiona crear sistemas."
+        imageUrl="https://raw.githubusercontent.com/francoleon08/portfolio/refs/heads/master/assets/perfil.png"
+        imageAlt="Franco Leon"
+    />
+
+    <Details 
+        title="Conóceme"
+    />
+
+    <Skills 
+        title="Skills"
+    />
+
+    <Projects 
+        title="Proyectos"
+    />
+
+    <ContactSection />
+</Layout>

@@ -1,0 +1,76 @@
+---
+import Skills from '../data/skills.json';
+const { title } = Astro.props;
+---
+
+<section id="skills" class="skills-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">{title}</h2>
+        <div class="row">
+            {Skills.map(card => (
+                <div class="col-md-4 mb-4">
+                    <div class="grid-container">                    
+                            <div class="skill-card">
+                                <div style={card.main ? "display: flex; justify-content: space-between; align-items: center;" : ""}>
+                                    <div class="skill-icon">
+                                        <i class={`${card.iconClass}`}></i>
+                                    </div>     
+                                    {
+                                        card.main && (<div class="skill-card-main">Main</div>)
+                                    }  
+                                </div>
+                                <h5>{card.tecnology}</h5>
+                                <p>{card.description}</p>
+                            </div>                        
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
+
+<style>
+    .skills-section {
+        padding: 25px 0;
+        padding: 0 .5rem;
+    }
+
+    .skill-card {
+        background-color: #eaeef1;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: left;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        height: 270px;
+    }
+
+    .skill-card:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    .skill-card-main {
+        background-color: #F5004F;
+        color: white;
+        padding: 2px 8px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .skill-card h5 {
+        margin-top: 15px;
+        font-weight: 700;
+    }
+
+    .skill-card p {
+        margin-top: 10px;
+        font-weight: 400;
+        color: #6c757d;
+    }
+
+    .skill-icon {
+        font-size: 38px;
+        color: #333;
+    }
+
+</style>

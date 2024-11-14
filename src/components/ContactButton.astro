@@ -1,0 +1,25 @@
+---
+const { text } = Astro.props;
+---
+
+<a class="contact-button" href="#contact">{text}</a>
+
+<style>
+    .contact-button {
+        color: white !important;
+        font-size: larger;
+        display: inline-block;
+        padding: 8px 16px;
+        border: 2px solid #7C00FE;        
+        border-radius: 30px;
+        text-decoration: none;
+        background-color: #7C00FE;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .contact-button:hover {
+        background-color: white;
+        color: #7C00FE !important;
+    }
+</style>

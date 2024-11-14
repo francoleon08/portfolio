@@ -1,0 +1,88 @@
+[
+    {
+        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/movie.jpg?raw=true",
+        "title": "Movie reservation system",
+        "description": "Sistema backend para la reservación de películas. Implementa gestión de roles, autenticación JWT y demás caracteristicas de seguridad.",
+        "technologies": "Java 17 - Spring Boot - Maven - MySQL",
+        "inProgress": true,
+        "icons": [
+            {
+                "url": "https://github.com/francoleon08/movie-reservation-system",
+                "iconClass": "fab fa-github"
+            }
+        ]
+    },
+    {
+        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/prodeconsa.png?raw=true",
+        "title": "Prodeconsa SA.",
+        "description": "Sitio web desarrollado para la empresa A&M Prodeconsa S.A.",
+        "technologies": "HTML - CSS - SASS - JS",
+        "inProgress": false,
+        "icons": [
+            {
+                "url": "https://prodeconsa-sa.vercel.app/",
+                "iconClass": "fa-brands fa-chrome"
+            },
+            {
+                "url": "https://github.com/francoleon08/prodeconsa-sa",
+                "iconClass": "fab fa-github"
+            }                
+        ]
+    },
+    {
+        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/tvseries.jpg?raw=true",
+        "title": "TV Series Info",
+        "description": "Rediseño completo de aplicación aplicando principios SOLID, patrones de diseño y MVP",
+        "technologies": "Java 11 - Gradle - SQLite",
+        "inProgress": false,
+        "icons": [
+            {
+                "url": "https://github.com/francoleon08/proyecto-dyds",
+                "iconClass": "fab fa-github"
+            }
+        ]
+    },
+    {
+        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/parquimetros.jpg?raw=true",
+        "title": "Parquimetros",
+        "description": "Desarrollo de un sistema de parquimetros con gestión de roles, el cual permite a los usuarios estacionar su vehiculo y a los inspectores registrar multas.",
+        "technologies": "Java 11 - Maven - MySQL - MVC",
+        "inProgress": false,
+        "icons": [
+            {
+                "url": "https://github.com/drg-dcic-uns/proyectobd2023-leon-oyarzun",
+                "iconClass": "fab fa-github"
+            }
+        ]
+    },
+    {
+        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/login.png?raw=true",
+        "title": "API de Gestión de Usuarios",
+        "description": "Solución robusta y escalable para gestionar datos de usuarios. Utiliza JWT y verificación via email.",
+        "technologies": "Python - MySQL - Docker - Render - Railway",
+        "inProgress": false,
+        "icons": [
+            {
+                "url": "https://francoleon08.github.io/user-service-front/",
+                "iconClass": "fa-brands fa-chrome"
+            },
+            {
+                "url": "https://github.com/francoleon08/user-service",
+                "iconClass": "fab fa-github"
+            }
+        ]
+    },
+    {
+        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/testing.jpg?raw=true",
+        "title": "Testing con Playwright",
+        "description": "Pruebas automatizadas para verificar el funcionamiento de un formulario de inicio de sesión.",
+        "technologies": "TypeScript - Playwright - NodeJs",
+        "inProgress": false,
+        "icons": [
+            {
+                "url": "https://github.com/francoleon08/tarea-8-Playwright",
+                "iconClass": "fab fa-github"
+            }
+        ]
+    }
+]
