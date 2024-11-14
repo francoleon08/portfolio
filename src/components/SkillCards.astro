@@ -1,10 +1,11 @@
 ---
 import Skills from '../data/skills.json';
+const { title } = Astro.props;
 ---
 
 <section id="skills" class="skills-section py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Skills</h2>
+        <h2 class="text-center mb-5">{title}</h2>
         <div class="row">
             {Skills.map(card => (
                 <div class="col-md-4 mb-4">
