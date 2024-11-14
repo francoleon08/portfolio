@@ -13,6 +13,23 @@
         ]
     },
     {
+        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/web.png?raw=true",
+        "title": "Portoflio web personal",
+        "description": "Sitio web personal desarrollado con Astro y desplegado en Vercel.",
+        "technologies": "Astro - Vercel",
+        "inProgress": true,
+        "icons": [
+            {
+                "url": "https://francoleondev.vercel.app/",
+                "iconClass": "fa-brands fa-chrome"
+            },
+            {
+                "url": "https://github.com/francoleon08/portfolio",
+                "iconClass": "fab fa-github"
+            }
+        ]
+    },
+    {
         "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/prodeconsa.png?raw=true",
         "title": "Prodeconsa SA.",
         "description": "Sitio web desarrollado para la empresa A&M Prodeconsa S.A.",
