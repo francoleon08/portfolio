@@ -1,54 +1,67 @@
-# Astro Starter Kit: Basics
+# Portfolio personal
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este es el código fuente de mi portfolio personal, desarrollado con [Astro](https://astro.build). El sitio muestra mis habilidades, proyectos y formas de contacto.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+![Imagen del Portfolio](assets/web.png)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Estructura del Proyecto
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+Dentro de tu proyecto Astro, verás los siguientes directorios y archivos:
 
 ```text
-/
-├── public/
-│   └── favicon.svg
+├── assets/
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── AboutMe.astro
+│   │   ├── ContactButton.astro
+│   │   ├── ContactSection.astro
+│   │   ├── Details.astro
+│   │   ├── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── SkillCards.astro
+│   │   └── project-section/
+│   │       ├── ProjectCard.astro
+│   │       └── ProjectSection.astro
+│   ├── data/
+│   │   ├── projects.json
+│   │   └── skills.json
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
 │       └── index.astro
-└── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🧞 Comandos
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Todos los comandos se ejecutan desde la raíz del proyecto, en una terminal:
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
+| Comando                   | Acción                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Instala las dependencias                         |
+| `npm run dev`             | Inicia el servidor de desarrollo en `localhost:4321` |
+| `npm run build`           | Construye el sitio de producción en `./dist/`    |
+| `npm run preview`         | Previsualiza tu construcción localmente, antes de desplegar |
+| `npm run astro ...`       | Ejecuta comandos CLI como `astro add`, `astro check` |
+| `npm run astro -- --help` | Obtén ayuda usando el Astro CLI                  |
 
-## 👀 Want to learn more?
+## 📁 Estructura de Componentes
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **AboutMe.astro**: Muestra información sobre mí.
+- **ContactButton.astro**: Botón para la sección de contacto.
+- **ContactSection.astro**: Sección de contacto.
+- **Details.astro**: Sección de detalles personales.
+- **Footer.astro**: Pie de página.
+- **Header.astro**: Encabezado del sitio.
+- **SkillCards.astro**: Tarjetas de habilidades.
+- **project-section/**: Contiene componentes relacionados con los proyectos:
+  - **ProjectCard.astro**: Tarjeta individual de proyecto.
+  - **ProjectSection.astro**: Sección que agrupa todas las tarjetas de proyectos.
+
+## 📄 Datos
+
+- **projects.json**: Datos de los proyectos.
+- **skills.json**: Datos de las habilidades.
+
+## 🌐 Despliegue
+
+Este proyecto está configurado para ser desplegado en Vercel usando el adaptador de Astro para Vercel.
