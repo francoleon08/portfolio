@@ -1,8 +1,8 @@
 ---
-const { text } = Astro.props;
+const { text, section } = Astro.props;
 ---
 
-<a class="contact-button" href="#contact">{text}</a>
+<a class="contact-button" href={section}>{text}</a>
 
 <style>
     .contact-button {
@@ -10,16 +10,15 @@ const { text } = Astro.props;
         font-size: larger;
         display: inline-block;
         padding: 8px 16px;
-        border: 2px solid #7C00FE;        
-        border-radius: 30px;
+        border: 2px solid #e84142;        
+        border-radius: 20px;
         text-decoration: none;
-        background-color: #7C00FE;
+        background-color: #e84142;
         font-weight: bold;
         transition: background-color 0.3s, color 0.3s;
     }
 
     .contact-button:hover {
-        background-color: white;
-        color: #7C00FE !important;
+        box-shadow: 0 0 60px 0 rgba(236, 81, 81, 0.5);
     }
 </style>
