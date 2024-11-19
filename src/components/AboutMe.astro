@@ -1,40 +1,83 @@
 ---
 const { title, description, imageUrl, imageAlt } = Astro.props;
+import ContactButton from "./ContactButton.astro"
 ---
 
 <section class="about-me">
-    <div class="container">
+    <div class="about-me-container-1">
         <div class="about-me-inner">
-            <div class="d-flex flex-column align-items-center justify-content-center">
-                <div class="p-2">
+            <div class="about-me-container-2">
+                <div>
                     <h2>{title}</h2>
                     <p class="text-about-me">
                         {description}
                     </p>
+                    <ContactButton 
+                        text="Ver más"
+                        section="#conoceme"
+                    />
                 </div>
-                <div class="p-2">
+                <div class="about-me-img-container">
                     <img src={imageUrl} alt={imageAlt} class="img-fluid">
                 </div>
             </div>
-        </div>
+        </div>          
     </div>
 </section>
 
 <style>
-    .about-me {
-        text-align: center;
-        min-height: 100vh;
+    .about-me {        
+        min-height: 100vh;        
+        padding-top: 100px;                          
     }
 
-    .text-abaut-me {
-        font-size: 1.4rem;
-        font-weight: 600;
-        color: #6c757d;
+    .about-me-container-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;               
     }
 
-    .about-me img {
-        border-radius: 10px;
-        max-width: 100%;
-        height: 300px;
+    .about-me-container-2 div {
+        padding: 0 20px;
+    }
+
+    .about-me h2 {
+        color: rgb(238, 234, 234);
+    }
+
+    .text-about-me {
+        margin-bottom: 20px;
+        color: rgb(163, 159, 159) !important;
+    }
+
+    .about-me-img-container img {
+        box-shadow: -50px -50px 100px  rgba(232, 65, 66, 0.5);
+        border-radius: 2%;
+    }
+
+    @media (max-width: 991px) {   
+        .about-me {
+            background-image: url('/assets/background-mobile.jpg');            
+            background-size: cover;
+            background-position: center;                    
+        }
+
+        .about-me-inner {            
+            min-height: 100vh;
+            backdrop-filter: blur(5px);
+        }
+        
+        .about-me-container-2 div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .about-me-img-container {
+            display: none !important;
+        }
     }
 </style>

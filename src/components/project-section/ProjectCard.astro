@@ -3,31 +3,43 @@ import Projects from "../../data/projects.json";
 ---
 
 {
-    Projects.map(project => (
-        <div class="row d-flex justify-content-between align-items-center mb-5">
-            <div class="col-md-6 img-project-container">
+    Projects.map((project, index) => (
+        <div 
+            class="card-project mb-5" 
+            style={{ flexDirection: index % 2 === 0 ? 'row' : 'row-reverse' }}
+        >            
+            <div class="img-project-container">
                 <div class="img-wrapper">
                     <img
                         class="img-project"
                         src={project.urlImg}
                         alt="Placeholder"
                         class="img-fluid img-project"
-                    />  
-                    {project.inProgress && (<span class="badge">En desarrollo</span>)}                  
+                    />
+                    {project.inProgress && (
+                        <span class="badge">En desarrollo</span>
+                    )}
+                </div>
+                <div>
+                    {project.icons.map((icon) => (
+                        <a href={icon.url} target="_blank" class="project-icon">
+                            <i class={icon.iconClass} />
+                        </a>
+                    ))}
                 </div>
             </div>
-            <div class="col-md-6 py-3">
+            <div class="card-project-details">
                 <h3 class="title-project">{project.title}</h3>
-                <p class="description-project text-justify">{project.description}</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="tec-project">{project.technologies}</p>
-                    <div>
-                        {project.icons.map(icon => (
-                            <a href={icon.url} target="_blank" class="project-icon">
-                                <i class={icon.iconClass}></i>
-                            </a>
-                        ))}
-                    </div>
+                <p class="description-project text-justify">
+                    {project.description}
+                </p>
+                <div>
+                    <h4>Tecnologías utilizadas</h4>
+                    {project.technologies.map((tec) => (
+                        <a href={tec.url} target="_blank">
+                            <img class="project-card-img-tec" src={tec.urlImg} />
+                        </a>
+                    ))}
                 </div>
             </div>
         </div>
@@ -35,10 +47,44 @@ import Projects from "../../data/projects.json";
 }
 
 <style>
+    .card-project {
+        background-color: white;
+        border-radius: 2rem;
+        box-shadow:
+            0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .card-project-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .img-project-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
     .img-project {
-        width: 500px;
-        height: 300px;
+        width: 25rem;
+        height: 15rem;
         box-shadow: 0 16px 16px rgba(0, 0, 0, 0.3);
+        border-radius: 1rem;
+    }
+
+    .img-project:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
     }
 
     .img-wrapper {
@@ -69,14 +115,16 @@ import Projects from "../../data/projects.json";
         color: #6c757d;
     }
 
-    .img-project {
-        border-radius: 10px;
-    }
-
     .tec-project {
         font-size: 1.2rem;
         font-weight: 800;
-        color: #F5004F;
+        color: #f5004f;
+    }
+
+    .project-card-img-tec {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
     }
 
     .project-icon {
@@ -91,39 +139,36 @@ import Projects from "../../data/projects.json";
     }
 
     .project-icon i:hover {
-        color: #7C00FE;
+        color: #7c00fe;
+    }
+
+    @media (max-width: 1240px) {
+        .card-project {
+            flex-direction: column-reverse !important;
+        }
+
+        .img-project {
+            width: 35rem;
+            height: auto;
+        }
+    }
+
+   
+
+    @media (max-width: 1100px) {
+        .img-project {
+            width: 30rem;
+        }
     }
 
     @media (max-width: 550px) {
         .img-project {
-            width: 450px;
-            height: auto;
+            width: 20rem;
         }
 
         .img-project-container {
             display: flex;
             justify-content: center;
-        }
-    }
-
-    @media (max-width: 500px) {
-        .img-project {
-            width: 400px;
-            height: auto;
-        }
-    }
-
-    @media (max-width: 430px) {
-        .img-project {
-            width: 350px;
-            height: auto;
-        }
-    }
-
-    @media (max-width: 400px) {
-        .img-project {
-            width: 300px;
-            height: auto;
         }
     }
 </style>

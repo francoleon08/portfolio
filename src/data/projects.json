@@ -1,9 +1,22 @@
 [
     {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/movie.jpg?raw=true",
+        "urlImg": "/public/assets/movie.jpg",
         "title": "Movie reservation system",
         "description": "Sistema backend para la reservación de películas. Implementa gestión de roles, autenticación JWT y demás caracteristicas de seguridad.",
-        "technologies": "Java 17 - Spring Boot - Maven - MySQL",
+        "technologies": [
+            {
+                "urlImg": "/public/assets/java.png",
+                "url": "https://www.java.com"
+            },
+            {
+                "urlImg": "/public/assets/spring.png",
+                "url": "https://spring.io/"
+            },
+            {
+                "urlImg": "/public/assets/mysql.png",
+                "url": "https://www.mysql.com/"
+            }                        
+        ],        
         "inProgress": true,
         "icons": [
             {
@@ -13,27 +26,26 @@
         ]
     },
     {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/web.png?raw=true",
-        "title": "Portoflio web personal",
-        "description": "Sitio web personal desarrollado con Astro y desplegado en Vercel.",
-        "technologies": "Astro - Vercel",
-        "inProgress": true,
-        "icons": [
+        "title": "Prodeconsa SA.",
+        "description": "Sitio web desarrollado para la empresa A&M Prodeconsa S.A.",        
+        "technologies": [
             {
-                "url": "https://francoleondev.vercel.app/",
-                "iconClass": "fa-brands fa-chrome"
+                "urlImg": "/public/assets/html.png",
+                "url": "https://developer.mozilla.org/es/docs/Web/HTML"
             },
             {
-                "url": "https://github.com/francoleon08/portfolio",
-                "iconClass": "fab fa-github"
-            }
-        ]
-    },
-    {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/prodeconsa.png?raw=true",
-        "title": "Prodeconsa SA.",
-        "description": "Sitio web desarrollado para la empresa A&M Prodeconsa S.A.",
-        "technologies": "HTML - CSS - SASS - JS",
+                "urlImg": "/public/assets/css-3.png",
+                "url": "https://developer.mozilla.org/es/docs/Web/CSS"
+            },
+            {
+                "urlImg": "/public/assets/sass.png",
+                "url": "https://sass-lang.com/"
+            },
+            {
+                "urlImg": "/public/assets/js.png",
+                "url": "https://developer.mozilla.org/es/docs/Web/JavaScript"
+            } 
+        ],
         "inProgress": false,
         "icons": [
             {
@@ -47,10 +59,19 @@
         ]
     },
     {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/tvseries.jpg?raw=true",
+        "urlImg": "/public/assets/tvseries.jpg",
         "title": "TV Series Info",
-        "description": "Rediseño completo de aplicación aplicando principios SOLID, patrones de diseño y MVP",
-        "technologies": "Java 11 - Gradle - SQLite",
+        "description": "Rediseño completo de aplicación aplicando principios SOLID, patrones de diseño y MVP",        
+        "technologies": [
+            {
+                "urlImg": "/public/assets/java.png",
+                "url": "https://www.java.com"
+            },
+            {
+                "urlImg": "/public/assets/sqlite.png",
+                "url": "https://www.sqlite.org/"
+            } 
+        ],
         "inProgress": false,
         "icons": [
             {
@@ -60,10 +81,19 @@
         ]
     },
     {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/parquimetros.jpg?raw=true",
+        "urlImg": "/public/assets/parquimetros.jpg",
         "title": "Parquimetros",
         "description": "Desarrollo de un sistema de parquimetros con gestión de roles, el cual permite a los usuarios estacionar su vehiculo y a los inspectores registrar multas.",
-        "technologies": "Java 11 - Maven - MySQL - MVC",
+        "technologies": [
+            {
+                "urlImg": "/public/assets/java.png",
+                "url": "https://www.java.com"
+            },
+            {
+                "urlImg": "/public/assets/mysql.png",
+                "url": "https://www.mysql.com/"
+            }  
+        ],
         "inProgress": false,
         "icons": [
             {
@@ -73,10 +103,23 @@
         ]
     },
     {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/login.png?raw=true",
+        "urlImg": "/public/assets/login.png",
         "title": "API de Gestión de Usuarios",
-        "description": "Solución robusta y escalable para gestionar datos de usuarios. Utiliza JWT y verificación via email.",
-        "technologies": "Python - MySQL - Docker - Render - Railway",
+        "description": "Solución robusta y escalable para gestionar datos de usuarios. Utiliza JWT y verificación via email.",        
+        "technologies": [
+            {
+                "urlImg": "/public/assets/python.png",
+                "url": "https://www.python.org/"
+            },
+            {
+                "urlImg": "/public/assets/mysql.png",
+                "url": "https://www.mysql.com/"
+            },
+            {
+                "urlImg": "/public/assets/docker.png",
+                "url": "https://www.docker.com/"
+            }  
+        ],
         "inProgress": false,
         "icons": [
             {
@@ -90,10 +133,19 @@
         ]
     },
     {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/assets/testing.jpg?raw=true",
+        "urlImg": "/public/assets/testing.jpg",
         "title": "Testing con Playwright",
         "description": "Pruebas automatizadas para verificar el funcionamiento de un formulario de inicio de sesión.",
-        "technologies": "TypeScript - Playwright - NodeJs",
+        "technologies": [
+            {
+                "urlImg": "/public/assets/node.png",
+                "url": "https://nodejs.org"
+            },
+            {
+                "urlImg": "/public/assets/ty.png",
+                "url": "https://www.typescriptlang.org/"
+            }  
+        ],
         "inProgress": false,
         "icons": [
             {
