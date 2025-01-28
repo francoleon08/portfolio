@@ -1,19 +1,19 @@
 [
     {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/movie.jpg?raw=true",
+        "urlImg": "src/images/movie.jpg",
         "title": "Movie reservation system",
         "description": "Sistema backend para la reservación de películas. Implementa gestión de roles, autenticación JWT y demás caracteristicas de seguridad.",
         "technologies": [
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/java.png?raw=true",
+                "urlImg": "src/images/java.png",
                 "url": "https://www.java.com"
             },
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/spring.png?raw=true",
+                "urlImg": "src/images/spring.png",
                 "url": "https://spring.io/"
             },
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/mysql.png?raw=true",
+                "urlImg": "src/images/mysql.png",
                 "url": "https://www.mysql.com/"
             }                        
         ],        
@@ -26,24 +26,24 @@
         ]
     },
     {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/prodeconsa.png?raw=true",
+        "urlImg": "src/images/prodeconsa.png",
         "title": "Prodeconsa SA.",
         "description": "Sitio web desarrollado para la empresa A&M Prodeconsa S.A.",        
         "technologies": [
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/html.png?raw=true",
+                "urlImg": "src/images/html.png",
                 "url": "https://developer.mozilla.org/es/docs/Web/HTML"
             },
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/css-3.png?raw=true",
+                "urlImg": "src/images/css-3.png",
                 "url": "https://developer.mozilla.org/es/docs/Web/CSS"
             },
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/sass.png?raw=true",
+                "urlImg": "src/images/sass.png",
                 "url": "https://sass-lang.com/"
             },
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/js.png?raw=true",
+                "urlImg": "src/images/js.png",
                 "url": "https://developer.mozilla.org/es/docs/Web/JavaScript"
             } 
         ],
@@ -60,16 +60,16 @@
         ]
     },
     {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/tvseries.jpg?raw=true",
+        "urlImg": "src/images/tvseries.jpg",
         "title": "TV Series Info",
         "description": "Rediseño completo de aplicación aplicando principios SOLID, patrones de diseño y MVP",        
         "technologies": [
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/java.png?raw=true",
+                "urlImg": "src/images/java.png",
                 "url": "https://www.java.com"
             },
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/sqlite.png?raw=true",
+                "urlImg": "src/images/sqlite.png",
                 "url": "https://www.sqlite.org/"
             } 
         ],
@@ -82,16 +82,16 @@
         ]
     },
     {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/parquimetros.jpg?raw=true",
+        "urlImg": "src/images/parquimetros.jpg",
         "title": "Parquimetros",
         "description": "Desarrollo de un sistema de parquimetros con gestión de roles, el cual permite a los usuarios estacionar su vehiculo y a los inspectores registrar multas.",
         "technologies": [
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/java.png?raw=true",
+                "urlImg": "src/images/java.png",
                 "url": "https://www.java.com"
             },
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/mysql.png?raw=true",
+                "urlImg": "src/images/mysql.png",
                 "url": "https://www.mysql.com/"
             }  
         ],
@@ -104,20 +104,20 @@
         ]
     },
     {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/login.png?raw=true",
+        "urlImg": "src/images/login.png",
         "title": "API de Gestión de Usuarios",
         "description": "Solución robusta y escalable para gestionar datos de usuarios. Utiliza JWT y verificación via email.",        
         "technologies": [
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/python.png?raw=true",
+                "urlImg": "src/images/python.png",
                 "url": "https://www.python.org/"
             },
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/mysql.png?raw=true",
+                "urlImg": "src/images/mysql.png",
                 "url": "https://www.mysql.com/"
             },
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/docker.png?raw=true",
+                "urlImg": "src/images/docker.png",
                 "url": "https://www.docker.com/"
             }  
         ],
@@ -134,16 +134,16 @@
         ]
     },
     {
-        "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/testing.jpg?raw=true",
+        "urlImg": "src/images/testing.jpg",
         "title": "Testing con Playwright",
         "description": "Pruebas automatizadas para verificar el funcionamiento de un formulario de inicio de sesión.",
         "technologies": [
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/node.png?raw=true",
+                "urlImg": "src/images/node.png",
                 "url": "https://nodejs.org"
             },
             {
-                "urlImg": "https://github.com/francoleon08/portfolio/blob/master/public/assets/ty.png?raw=true",
+                "urlImg": "src/images/ty.png",
                 "url": "https://www.typescriptlang.org/"
             }  
         ],

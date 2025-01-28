@@ -1,6 +1,6 @@
 ---
 const { title, description, imageUrl, imageAlt } = Astro.props;
-import ContactButton from "./ContactButton.astro"
+import ContactButton from "./ContactButton.astro";
 ---
 
 <section class="about-me">
@@ -12,29 +12,46 @@ import ContactButton from "./ContactButton.astro"
                     <p class="text-about-me">
                         {description}
                     </p>
-                    <ContactButton 
-                        text="Ver más"
-                        section="#conoceme"
-                    />
+                    <div class="about-me-buttons">
+                        <ContactButton text="Ver más" section="#conoceme" />
+                        <a href="#" id="downloadLink-AboutMe">Descargar CV</a>
+                    </div>
                 </div>
                 <div class="about-me-img-container">
-                    <img src={imageUrl} alt={imageAlt} class="img-fluid">
+                    <img src={imageUrl} alt={imageAlt} class="img-fluid" />
                 </div>
             </div>
-        </div>          
+        </div>
     </div>
 </section>
 
+<script>
+    const downloadLink = document.getElementById("downloadLink-AboutMe");
+    if (downloadLink) {
+        downloadLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            const pdfUrl =
+                "https://github.com/francoleon08/francoleon08/raw/main/CV.pdf";
+            const link = document.createElement("a");
+            link.href = pdfUrl;
+            link.download = "CV_Franco_Leon.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    }
+</script>
+
 <style>
-    .about-me {        
-        min-height: 100vh;        
-        padding-top: 100px;                          
+    .about-me {
+        min-height: 100vh;
+        padding-top: 100px;
     }
 
     .about-me-container-2 {
         display: flex;
         justify-content: center;
-        align-items: center;               
+        align-items: center;
     }
 
     .about-me-container-2 div {
@@ -51,22 +68,42 @@ import ContactButton from "./ContactButton.astro"
     }
 
     .about-me-img-container img {
-        box-shadow: -50px -50px 100px  rgba(232, 65, 66, 0.5);
+        box-shadow: -50px -50px 100px rgba(232, 65, 66, 0.5);
         border-radius: 2%;
     }
 
-    @media (max-width: 991px) {   
-        .about-me {
-            background-image: url('https://github.com/francoleon08/portfolio/blob/master/public/assets/background-mobile.jpg?raw=true');            
-            background-size: cover;
-            background-position: center;                    
-        }
+    .about-me-buttons {
+        display: flex;
+        gap: 20px;
+    }
 
-        .about-me-inner {            
+    #downloadLink-AboutMe {
+        color: #e84142 !important;
+        font-size: larger;
+        display: inline-block;
+        padding: 8px 16px;
+        border: 2px solid #e84142;
+        border-radius: 20px;
+        text-decoration: none;        
+        font-weight: bold;        
+        transition:
+            background-color 0.3s,
+            color 0.3s;
+    }
+
+    #downloadLink-AboutMe:hover {
+        color: white !important;
+        background-color: #e84142;
+    }
+
+    @media (max-width: 991px) {
+        
+
+        .about-me-inner {
             min-height: 100vh;
             backdrop-filter: blur(5px);
         }
-        
+
         .about-me-container-2 div {
             display: flex;
             flex-direction: column;

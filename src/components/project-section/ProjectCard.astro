@@ -1,20 +1,23 @@
 ---
+import { Image } from "astro:assets";
 import Projects from "../../data/projects.json";
 ---
 
 {
     Projects.map((project, index) => (
-        <div 
-            class="card-project mb-5" 
-            style={{ flexDirection: index % 2 === 0 ? 'row' : 'row-reverse' }}
-        >            
+        <div
+            class="card-project mb-5"
+            style={{ flexDirection: index % 2 === 0 ? "row" : "row-reverse" }}
+        >
             <div class="img-project-container">
                 <div class="img-wrapper">
                     <img
                         class="img-project"
-                        src={project.urlImg}
-                        alt="Placeholder"
                         class="img-fluid img-project"
+                        src={project.urlImg}
+                        decoding="async"
+                        loading="lazy"
+                        alt="Placeholder"
                     />
                     {project.inProgress && (
                         <span class="badge">En desarrollo</span>
@@ -37,7 +40,12 @@ import Projects from "../../data/projects.json";
                     <h4>Tecnologías utilizadas</h4>
                     {project.technologies.map((tec) => (
                         <a href={tec.url} target="_blank">
-                            <img class="project-card-img-tec" src={tec.urlImg} />
+                            <img
+                                class="project-card-img-tec"
+                                src={tec.urlImg}
+                                decoding="async"
+                                loading="lazy"
+                            />
                         </a>
                     ))}
                 </div>
@@ -152,8 +160,6 @@ import Projects from "../../data/projects.json";
             height: auto;
         }
     }
-
-   
 
     @media (max-width: 1100px) {
         .img-project {

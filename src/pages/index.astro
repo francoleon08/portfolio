@@ -1,52 +1,26 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import AboutMe from '../components/AboutMe.astro';
-import Details from '../components/Details.astro';
-import Skills from '../components/SkillCards.astro';
-import Projects from '../components/project-section/ProjectSection.astro'
-import ContactSection from '../components/ContactSection.astro';
+import Layout from "../layouts/Layout.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Details from "../components/Details.astro";
+import Skills from "../components/SkillCards.astro";
+import Projects from "../components/project-section/ProjectSection.astro";
+import ContactSection from "../components/ContactSection.astro";
 ---
 
 <Layout title="Franco Leon">
-	<AboutMe
+    <AboutMe
         title="Soluciónes de Software"
         description="Convierte tus ideas en software, con tecnologías modernas y escalables."
-        imageUrl="https://github.com/francoleon08/portfolio/blob/master/public/assets/code.png?raw=true"
+        imageUrl="src/images/code.png"
         imageAlt="Franco Leon"
     />
 
-    <Details 
-        title="Acerca de mí"
-    />
+    <Details title="Acerca de mí" />
 
-    <Skills 
-        title="Skills"
-    />
-
-    <div class="container-projects">
-        <div class="projects-header"></div>        
-        <Projects 
-            title="Proyectos"
-        />
-        <div>
-            <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
-                <path d="M-100 79C-100 79 218.416 23.165 693.5 23.165C1168.58 23.165 1487 79 1487 79V0H-100V79Z"></path>
-            </svg>            
-        </div>        
-    </div>
-
-
+    <Skills title="Skills" />
+    
+    <Projects title="Proyectos" />
+    
     <ContactSection />
 </Layout>
 
-<style>    
-    .projects-header {
-        width: 100%;
-        height: 150px;
-        background: rgb(5,5,5);
-        background: linear-gradient(180deg, rgba(5,5,5,1) 17%, rgba(67,67,67,1) 42%, rgba(129,129,129,1) 61%, rgba(189,189,190,1) 81%, rgba(238,238,241,1) 97%);
-    }
-    .svg-curve path {
-        fill: #eeeef1;
-    }
-</style>
