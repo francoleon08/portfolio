@@ -71,15 +71,21 @@ import ContactButton from "./ContactButton.astro"
     const navbar = document.querySelector(".navbar") as HTMLElement;
 
     window.addEventListener("scroll", () => {
-    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+        let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {        
-        navbar.style.transform = "translateY(-100%)";
-    } else {        
-        navbar.style.transform = "translateY(0)";
-    }
+        if (window.scrollY > 500) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
 
-    lastScrollTop = scrollTop;
+        if (scrollTop > lastScrollTop) {        
+            navbar.style.transform = "translateY(-100%)";
+        } else {        
+            navbar.style.transform = "translateY(0)";
+        }
+
+        lastScrollTop = scrollTop;
     });
 
 </script>
@@ -108,10 +114,14 @@ import ContactButton from "./ContactButton.astro"
         border-bottom: 2px solid rgb(71, 70, 70, 0.5);
         position: fixed;
         width: -webkit-fill-available;        
-        transition: transform 0.3s ease-in-out;
-        backdrop-filter: blur(14px);
-        background-color: rgba(255, 255, 255, 0.05);
+        transform: translateY(0);
+        transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+        background-color: transparent;
         z-index: 1000;
+    }
+
+    .navbar.scrolled {
+        background-color: rgb(17 20 39);
     }
 
     .nav-item *,
