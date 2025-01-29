@@ -68,7 +68,7 @@ import ContactButton from "./ContactButton.astro"
     }
 
     let lastScrollTop = 0;
-    const navbar = document.querySelector(".navbar");
+    const navbar = document.querySelector(".navbar") as HTMLElement;
 
     window.addEventListener("scroll", () => {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
