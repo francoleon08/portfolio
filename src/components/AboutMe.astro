@@ -45,7 +45,7 @@ import ContactButton from "./ContactButton.astro";
 <style>
     .about-me {
         min-height: 100vh;
-        padding: 120px 40px 0 40px;   
+        padding-top: 120px;
     }
 
     .about-me-container-2 {
@@ -67,6 +67,12 @@ import ContactButton from "./ContactButton.astro";
         color: rgb(163, 159, 159) !important;
     }
 
+    .about-me-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .about-me-img-container img {
         box-shadow: -50px -50px 100px rgba(232, 65, 66, 0.5);
         border-radius: 2%;
@@ -84,8 +90,8 @@ import ContactButton from "./ContactButton.astro";
         padding: 8px 16px;
         border: 2px solid #e84142;
         border-radius: 20px;
-        text-decoration: none;        
-        font-weight: bold;        
+        text-decoration: none;
+        font-weight: bold;
         transition:
             background-color 0.3s,
             color 0.3s;
@@ -97,7 +103,9 @@ import ContactButton from "./ContactButton.astro";
     }
 
     @media (max-width: 991px) {
-        
+        .about-me {            
+            padding-top: 0;
+        }
 
         .about-me-inner {
             min-height: 100vh;
