@@ -2,10 +2,10 @@
 import ContactButton from "./ContactButton.astro"
 ---
 
-<nav class="navbar navbar-expand-lg py-2 px-3">    
+<nav class="navbar navbar-expand-lg py-4 px-3">    
     <div class="container-fluid">
         <div class="d-flex align-items-center">
-            <a href="index.html" class="header-logo">
+            <a href="/" class="header-logo">
                 <div>
                     <svg style="color: #e84142; width: 50px; height: 50px;" xmlns="http://www.w3.org/2000/svg"
                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -118,10 +118,11 @@ import ContactButton from "./ContactButton.astro"
         transition: background-color 0.3s ease, transform 0.3s ease-in-out;
         background-color: transparent;
         z-index: 1000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     }
 
     .navbar.scrolled {
-        background-color: rgb(17 20 39);
+        background-color: rgb(21, 28, 43);
     }
 
     .nav-item *,
@@ -159,6 +160,7 @@ import ContactButton from "./ContactButton.astro"
     @media (max-width: 991px) {
         .navbar-nav {
             text-align: center;
+            background-color: rgb(17 24 39);
         }
 
         .header-logo-span {
