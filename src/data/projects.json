@@ -1,4 +1,132 @@
-[
+[   
+    {
+        "urlImg": "/dcicflix.png",
+        "title": "DCICFlix",
+        "description": "Desarrollo colaborativo de aplicación web orientada a microservicios, para la gestión de películas y series.",
+        "technologies": [
+            {
+                "urlImg": "/node.png",
+                "url": "https://nodejs.org"
+            },
+            {
+                "urlImg": "/react.png",
+                "url": "https://es.react.dev/"
+            },
+            {
+                "urlImg": "/java.png",
+                "url": "https://www.java.com"
+            },
+            {
+                "urlImg": "/python.png",
+                "url": "https://www.python.org/"
+            },
+            {
+                "urlImg": "/csharp.png",
+                "url": "https://dotnet.microsoft.com/es-es/languages/csharp"
+            },
+            {
+                "urlImg": "/docker.png",
+                "url": "https://www.docker.com/"
+            }                  
+        ],        
+        "inProgress": false,
+        "icons": [            
+            {
+                "url": "https://github.com/francoleon08/proyecto-topicos-microservicios",
+                "iconClass": "fab fa-github"
+            }                
+        ]
+    },
+    {
+        "urlImg": "/portfolio.png",
+        "title": "Portfolio personal",
+        "description": "Sitio web personal desarrollado con Astro y desplegado en Vercel.",
+        "technologies": [
+            {
+                "urlImg": "/astro.png",
+                "url": "https://astro.build/"
+            },
+            {
+                "urlImg": "/ty.png",
+                "url": "https://www.typescriptlang.org/"
+            },
+            {
+                "urlImg": "/python.png",
+                "url": "https://www.python.org/"
+            }                      
+        ],        
+        "inProgress": true,
+        "icons": [
+            {
+                "url": "https://francoleondev.vercel.app/",
+                "iconClass": "fa-brands fa-chrome"
+            },
+            {
+                "url": "https://github.com/francoleon08/portfolio",
+                "iconClass": "fab fa-github"
+            }                
+        ]
+    },
+    {
+        "urlImg": "/hierroyco.png",
+        "title": "Hierro y Co.",
+        "description": "Sitio web desarrollado para la empresa Hierro y Co. Desplegado en Vercel.",
+        "technologies": [
+            {
+                "urlImg": "/html.png",
+                "url": "https://developer.mozilla.org/es/docs/Web/HTML"
+            },
+            {
+                "urlImg": "/css-3.png",
+                "url": "https://developer.mozilla.org/es/docs/Web/CSS"
+            },            
+            {
+                "urlImg": "/js.png",
+                "url": "https://developer.mozilla.org/es/docs/Web/JavaScript"
+            }                      
+        ],        
+        "inProgress": true,
+        "icons": [
+            {
+                "url": "http://hierroyco.vercel.app/",
+                "iconClass": "fa-brands fa-chrome"
+            },
+            {
+                "url": "https://github.com/francoleon08/hierroyco",
+                "iconClass": "fab fa-github"
+            }                
+        ]
+    },
+    {
+        "urlImg": "/email-service.jpg",
+        "title": "Servidor de correos SMTP",
+        "description": "Desarrollado para servir la sección de contacto de mi portfolio. Desplegado en Render",
+        "technologies": [
+            {
+                "urlImg": "/python.png",
+                "url": "https://www.python.org/"
+            },                    
+            {
+                "urlImg": "/fastapi.png",
+                "url": "https://fastapi.tiangolo.com/"
+            },
+            {
+                "urlImg": "/docker.png",
+                "url": "https://www.docker.com/"
+            } 
+        ],        
+        "inProgress": false,
+        "icons": [
+            {
+                "url": "https://email-service-py.onrender.com",
+                "iconClass": "fa-brands fa-chrome"
+            },
+            {
+                "url": "https://github.com/francoleon08/email-service-py",
+                "iconClass": "fab fa-github"
+            }                
+        ]
+    },
     {
         "urlImg": "/movie.jpg",
         "title": "Movie reservation system",
@@ -102,37 +230,7 @@
                 "iconClass": "fab fa-github"
             }
         ]
-    },
-    {
-        "urlImg": "/login.png",
-        "title": "API de Gestión de Usuarios",
-        "description": "Solución robusta y escalable para gestionar datos de usuarios. Utiliza JWT y verificación via email.",        
-        "technologies": [
-            {
-                "urlImg": "/python.png",
-                "url": "https://www.python.org/"
-            },
-            {
-                "urlImg": "/mysql.png",
-                "url": "https://www.mysql.com/"
-            },
-            {
-                "urlImg": "/docker.png",
-                "url": "https://www.docker.com/"
-            }  
-        ],
-        "inProgress": false,
-        "icons": [
-            {
-                "url": "https://francoleon08.github.io/user-service-front/",
-                "iconClass": "fa-brands fa-chrome"
-            },
-            {
-                "url": "https://github.com/francoleon08/user-service",
-                "iconClass": "fab fa-github"
-            }
-        ]
-    },
+    },    
     {
         "urlImg": "/testing.jpg",
         "title": "Testing con Playwright",
