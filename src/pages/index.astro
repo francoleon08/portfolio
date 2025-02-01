@@ -18,9 +18,14 @@ import ContactSection from "../components/ContactSection.astro";
     <Details title="Acerca de mí" />
 
     <Skills title="Skills" />
-    
+
     <Projects title="Proyectos" />
-    
+
     <ContactSection />
 </Layout>
 
+<script type="module">
+    const response = await fetch("https://email-service-py.onrender.com", {
+        method: "GET",
+    });      
+</script>
