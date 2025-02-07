@@ -71,20 +71,45 @@
     </div>
 
     <div class="notify notify-loading">
-        <p>Enviando correo...</p>
+        <div class="notify-close">
+            <i class="bx bx-x buttonCloseNotify"></i>
+        </div>
+        <div class="notify-content">
+            <p>Enviando correo...</p>
+        </div>
     </div>
-    
+
     <div class="notify notify-success">
-        <p>Email enviado correctamente</p>
+        <div class="notify-close">
+            <i class="bx bx-x buttonCloseNotify"></i>
+        </div>
+        <div class="notify-content">
+            <p>Email enviado correctamente</p>
+        </div>
     </div>
 
     <div class="notify notify-error">
-        <p>Su consulta no pudo ser procesada, intente nuevamente.</p>
+        <div class="notify-close">
+            <i class="bx bx-x buttonCloseNotify"></i>
+        </div>
+        <div class="notify-content">
+            <p>Su consulta no pudo ser procesada, intente nuevamente.</p>
+        </div>
     </div>
 </section>
 
 <script>
     const form = document.getElementById("contactForm") as HTMLFormElement;
+    const buttonsCloseNotify = document.querySelectorAll(
+        ".buttonCloseNotify",
+    ) as NodeListOf<HTMLElement>;
+
+    buttonsCloseNotify.forEach((button) => {
+        button.addEventListener("click", () => {
+            const notify = button.parentElement?.parentElement as HTMLElement;
+            hideNotify(notify);
+        });
+    });
 
     form.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -109,7 +134,7 @@
                     },
                     body: JSON.stringify({ name, email, description }),
                 },
-            );            
+            );
 
             if (!response.ok) {
                 handleNotification("error");
@@ -117,7 +142,6 @@
                 handleNotification("success");
                 form.reset();
             }
-                       
         } catch (error) {
             console.error("Error:", error);
         }
@@ -130,14 +154,31 @@
 
     function handleNotification(type: string) {
         const notify = document.querySelector(`.notify-${type}`) as HTMLElement;
-        const allNotifies = document.querySelectorAll(".notify")as NodeListOf<HTMLElement>;
-        notify.style.display = "block";
+        const allNotifies = document.querySelectorAll(
+            ".notify",
+        ) as NodeListOf<HTMLElement>;
+        showNotify(notify);
 
         setTimeout(() => {
             allNotifies.forEach((notify) => {
-                notify.style.display = "none";
+                hideNotify(notify);
             });
-        }, 3000);
+        }, 5000);
+    }
+
+    function showNotify(notify: HTMLElement) {
+        notify.style.display = "block";
+        notify.style.opacity = "1";
+
+        requestAnimationFrame(() => {
+            notify.classList.add("show");
+        });
+    }
+
+    function hideNotify(notify: HTMLElement) {
+        notify.style.display = "none";        
+        notify.style.opacity = "0";
+        notify.classList.remove("show");
     }
 </script>
 
@@ -202,15 +243,46 @@
     }
 
     .notify {
-        display: none;
         position: fixed;
-        bottom: 30px;             
-        right: 30px;        
-        background-color: #e84142;
-        color: white;
-        border-radius: 10px;        
-        padding: 1rem;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgb(238, 238, 241);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        margin: 1rem;
         text-align: center;
         z-index: 1000;
+        opacity: 0;
+        transition: top 0.5s ease-in-out;
+    }
+
+    .notify.show {
+        display: block;
+        top: 30px;
+    }
+
+    .notify-close {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0.2rem;
+    }
+
+    .notify-close i {
+        cursor: pointer;
+        font-size: 2rem;
+        transition: all 0.2s;
+    }
+
+    .notify-close i:hover {
+        color: #f5004f;
+    }
+
+    .notify-content {
+        padding: 0rem 1rem 1rem 1rem;
+    }
+
+    .notify-content p {
+        color: #333;
     }
 </style>
