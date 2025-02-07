@@ -149,7 +149,7 @@
 
     function setLoader() {
         const loader = document.querySelector(".notify-loading") as HTMLElement;
-        loader.style.display = "block";
+        showNotify(loader);
     }
 
     function handleNotification(type: string) {
