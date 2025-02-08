@@ -157,6 +157,8 @@
 
     function handleNotification(type: string) {
         const notify = document.querySelector(`.notify-${type}`) as HTMLElement;
+        const loader = document.querySelector(".notify-loading") as HTMLElement;
+        hideNotify(loader);
         const allNotifies = document.querySelectorAll(
             ".notify",
         ) as NodeListOf<HTMLElement>;
