@@ -72,6 +72,7 @@
 
     <div class="notify notify-loading">
         <div class="notify-close">
+            <i class='bx bxs-bell'></i>
             <i class="bx bx-x buttonCloseNotify"></i>
         </div>
         <div class="notify-content">
@@ -81,6 +82,7 @@
 
     <div class="notify notify-success">
         <div class="notify-close">
+            <i class='bx bxs-bell'></i>
             <i class="bx bx-x buttonCloseNotify"></i>
         </div>
         <div class="notify-content">
@@ -90,6 +92,7 @@
 
     <div class="notify notify-error">
         <div class="notify-close">
+            <i class='bx bxs-bell'></i>
             <i class="bx bx-x buttonCloseNotify"></i>
         </div>
         <div class="notify-content">
@@ -246,7 +249,8 @@
         position: fixed;
         top: -100px;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
+        width: 600px;
         background-color: rgb(238, 238, 241);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         border-radius: 10px;
@@ -259,13 +263,13 @@
 
     .notify.show {
         display: block;
-        top: 30px;
+        top: 80px;
     }
 
     .notify-close {
         display: flex;
-        flex-direction: row-reverse;
-        padding: 0.2rem;
+        justify-content: space-between;
+        padding: 1rem 1rem;
     }
 
     .notify-close i {
@@ -280,9 +284,17 @@
 
     .notify-content {
         padding: 0rem 1rem 1rem 1rem;
+        text-align: left;
     }
 
     .notify-content p {
         color: #333;
+    }
+
+    @media (max-width: 991px) {
+        .notify {
+            width: 90%;
+            margin: 0;
+        }
     }
 </style>
