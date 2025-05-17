@@ -1,5 +1,31 @@
 [   
     {
+        "urlImg": "/hitgym.png",
+        "title": "HIT GYM",
+        "description": "Aplicación web para la gestión de turnos de un gimnasio. Desplegada en Render.",
+        "technologies": [
+            {
+                "urlImg": "/node.png",
+                "url": "https://nodejs.org"
+            },
+            {
+                "urlImg": "/react.png",
+                "url": "https://es.react.dev/"
+            },
+            {
+                "urlImg": "/ty.png",
+                "url": "https://www.typescriptlang.org/"
+            }        
+        ],        
+        "inProgress": false,
+        "icons": [            
+            {
+                "url": "https://react-express-iaweb-0z24.onrender.com/",
+                "iconClass": "fa-brands fa-chrome"
+            }              
+        ]
+    },
+    {
         "urlImg": "/dcicflix.png",
         "title": "DCICFlix",
         "description": "Desarrollo colaborativo de aplicación web orientada a microservicios, para la gestión de películas y series.",
