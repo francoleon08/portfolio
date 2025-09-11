@@ -1,6 +1,17 @@
- <svg style="color: #e84142; width: 50px; height: 50px;" xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
-                        <polyline points="16 18 22 12 16 6"></polyline>
-                        <polyline points="8 6 2 12 8 18"></polyline>
-                    </svg>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo circular -->
+  <circle cx="100" cy="100" r="95" stroke="#ffffff33" stroke-width="2" fill="none"/>
+  
+  <!-- Icono de código minimalista -->
+  <polyline points="70,80 90,100 70,120" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="130,80 110,100 130,120" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Nodo central representando backend -->
+  <circle cx="100" cy="100" r="10" fill="#ffffff"/>
+  
+  <!-- Conexiones al nodo central -->
+  <line x1="100" y1="100" x2="90" y2="100" stroke="#ffffff" stroke-width="2"/>
+  <line x1="100" y1="100" x2="110" y2="100" stroke="#ffffff" stroke-width="2"/>
+  <line x1="100" y1="100" x2="100" y2="90" stroke="#ffffff" stroke-width="2"/>
+  <line x1="100" y1="100" x2="100" y2="110" stroke="#ffffff" stroke-width="2"/>
+</svg>
