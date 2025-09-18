@@ -9,6 +9,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Github, Linkedin, Mail, FileText } from "lucide-react"
+import emailjs from "@emailjs/browser";
+import { toast } from "sonner"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -16,12 +18,34 @@ export function Contact() {
     email: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    //TODO: Integrar con un servicio de email o backend
-    console.log("Form submitted:", formData)
+    if (isSubmitting) return
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    if (!publicKey) {
+      toast.error("Disculpa, no se pudo enviar el mensaje.")
+      return
+    }
+    setIsSubmitting(true)
+    const payload = { name: formData.name, email: formData.email, message: formData.message }
+    try {
+      await toast.promise(
+        Promise.all([
+          emailjs.send("portfolio", "template_285ijzl", payload, { publicKey }),
+          emailjs.send("portfolio", "template_ekw9f6c", payload, { publicKey }),
+        ]),
+        {
+          loading: "Enviando mensaje…",
+          success: "Mensaje enviado. ¡Gracias por contactarme!",
+          error: "No se pudo enviar el mensaje. Intenta nuevamente.",
+        }
+      )
+      setFormData({ name: "", email: "", message: "" })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -63,8 +87,8 @@ export function Contact() {
                     required
                   />
                 </div>
-                <Button type="submit" className="w-full">
-                  Enviar Mensaje
+                <Button type="submit" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? "Enviando…" : "Enviar Mensaje"}
                 </Button>
               </form>
             </CardContent>

@@ -29,7 +29,7 @@ export default function Home() {
           <footer className="border-t border-border py-8">
             <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
               <p>
-                &copy; {new Date().getFullYear()} Franco Leon. | Desarrolado con{" "}
+                &copy; {new Date().getFullYear()} Franco Leon. | Desarrolado en{" "} 
                 <a
                   href="https://nextjs.org/"
                   target="_blank"
@@ -38,7 +38,7 @@ export default function Home() {
                 >
                   Next.js
                 </a>
-                ,{" "}
+                , y {" "}
                 <a
                   href="https://tailwindcss.com/"
                   target="_blank"
@@ -46,17 +46,8 @@ export default function Home() {
                   className="text-primary hover:underline"
                 >
                   Tailwind CSS
-                </a>
-                , y{" "}
-                <a
-                  href="https://vercel.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  Vercel
-                </a>
-                . | Con asistencia de {" "}
+                </a>                
+                 | Con asistencia de {" "}
                 <a
                   href="https://v0.app/"
                   target="_blank"
