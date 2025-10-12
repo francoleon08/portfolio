@@ -1,42 +1,38 @@
+"use client"
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ExternalLink, Lock } from "lucide-react"
+import { ExternalLink, Lock, Loader2 } from "lucide-react"
+import { useProjects } from "@/hooks/use-portfolio-data"
 
 export function Projects() {
-  const projects = [
-    {
-      title: "SumarSi Gestión",
-      description:
-        "Sistema integral para gestión comercial basado en el \"método de lo percibido\", gestionando ventas, compras, costos fijos, proveedores, cajas, conciliaciones y flujo de capital. Integrado con servicios web SOAP de ARCA (ex-AFIP) para facturación electrónica.",
-      stack: ["Spring Boot 3", "MySQL", "ReactJs", "Docker", "Jwt", "SOAP Web Services", "Don Web"],
-      isPrivate: true,
-      note: "Repositorio Privado por contrato con el cliente. Si deseas más información, contáctame.",
-    },
-    {
-      title: "Clon de Netflix con Microservicios",
-      description:
-        "Clon escalable de Netflix que muestra arquitectura de microservicios y prácticas de desarrollo modernas. Incluye un catalogo de películas y un sistema de recomendaciones en Python.",
-      stack: ["React", "Spring Boot", "Docker", "MongoDB", "RabbitMQ", "Python", "C#"],
-      isPrivate: false,
-      link: "https://github.com/francoleon08/proyecto-topicos-microservicios",
-    },
-    {
-      title: "Prodeconsa S.A. - Sitio Web Estático",
-      description:
-        "Sitio web estático profesional desarrollado para un cliente con diseño moderno y layout responsivo.",
-      stack: ["HTML", "CSS", "JavaScript"],
-      isPrivate: false,
-      link: "https://prodeconsa-sa.vercel.app/",
-    },
-    {
-      title: "Gym Access - Reserva de Turnos",
-      description:
-        "Sistema de reserva de turnos para un gimnasio.",
-      stack: ["React", "Express", "TypeScript", "PostgreSQL", "Superbase"],
-      isPrivate: false,
-      link: "https://react-express-iaweb-0z24.onrender.com/",
-    },
-  ]
+  const { projects, loading, error } = useProjects()
+
+  if (loading) {
+    return (
+      <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-12 text-center">Proyectos</h2>
+          <div className="flex justify-center items-center py-12">
+            <Loader2 className="h-8 w-8 animate-spin" />
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  if (error) {
+    return (
+      <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-12 text-center">Proyectos</h2>
+          <div className="text-center text-red-500">
+            Error al cargar los proyectos: {error}
+          </div>
+        </div>
+      </section>
+    )
+  }
 
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">

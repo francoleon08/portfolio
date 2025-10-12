@@ -6,7 +6,10 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "update-data": "node scripts/update-data.js",
+    "test-github-data": "node scripts/test-github-data.js",
+    "setup-github-data": "./scripts/setup-github-data.sh"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
