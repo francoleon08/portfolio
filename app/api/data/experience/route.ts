@@ -3,8 +3,7 @@ import { fetchGitHubData } from '@/lib/github-data'
 
 export async function GET() {
   try {
-    const result = await fetchGitHubData('experience.json', {
-      cache: 'force-cache',
+    const result = await fetchGitHubData('experience.json', {    
       revalidate: 300 // 5 minutos
     })
 
