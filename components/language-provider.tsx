@@ -23,9 +23,9 @@ const translations = {
 
     // Hero
     "hero.name": "Franco Leon",
-    "hero.title": "Desarrollador Backend y Full Stack Jr",
+    "hero.title": "Desarrollador Backend y Full Stack",
     "hero.subtitle":
-      "Estudiante Avanzado de Ciencias de la Computación | Ayudante de Cátedra en Universidad Nacional del Sur",
+      "Estudiante Avanzado de Ciencias de la Computación | Web Developer",
     "hero.description": "Construyo aplicaciones web robustas y escalabes usando Spring Boot, React y Docker.",
     "hero.github": "GitHub",
     "hero.linkedin": "LinkedIn",
